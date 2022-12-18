@@ -1,19 +1,25 @@
 
-import { useNavigate } from 'react-router-dom';
 
 
 import './App.css';
 
-
+var x = 0;
 function Nav(props) {
 
-  const  navigate=useNavigate();
+
 
 function myfun1(e){
 e.preventDefault();
 setTimeout(()=>{
-    navigate('/')
+    props.setroutestate(1)
 props.sethomestate("navstart");
+
+window.history.pushState(x, null, '/')
+x=x+1
+
+window.pstate = x+2;
+
+localStorage.setItem("previousstate", window.pstate);
 }, 1000)
 
 var array1= [false, "navendfull", "navendfull", "navendfull"]
@@ -25,8 +31,13 @@ function myfun2(e){
     e.preventDefault();
 
     setTimeout(()=>{
-        navigate('/about')
+        props.setroutestate(2)
         props.setaboutstate("navstart");
+        window.history.pushState(x, null, 'about')
+x=x+1
+
+window.pstate = x+2;
+localStorage.setItem("previousstate", window.pstate);
     }, 1000)
 
     var array1= ["navendfull", false, "navendfull", "navendfull"]
@@ -38,8 +49,12 @@ function myfun2(e){
 function myfun3(e){
     e.preventDefault();
     setTimeout(()=>{
-        navigate('/services')
+        props.setroutestate(3)
         props.setservicesstate("navstart");
+        window.history.pushState(x, null, '/services')
+x=x+1
+window.pstate = x+2;
+localStorage.setItem("previousstate", window.pstate);
     }, 1000)
     
     var array1= ["navendfull", "navendfull", false, "navendfull"]
@@ -50,8 +65,12 @@ function myfun3(e){
 function myfun4(e){
     e.preventDefault();
     setTimeout(()=>{
-    navigate('/contact')
+        props.setroutestate(4)
     props.setcontactstate("navstart");
+    window.history.pushState(x, null, '/contact')
+x=x+1
+window.pstate = x+2;
+localStorage.setItem("previousstate", window.pstate);
 }, 1000)
 
 var array1= ["navendfull", "navendfull", "navendfull", false]
