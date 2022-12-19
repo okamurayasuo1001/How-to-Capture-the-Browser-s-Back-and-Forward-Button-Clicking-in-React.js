@@ -14,7 +14,12 @@ useEffect(()=>{
 
     if(props.servicesstate==="popstatestart"){
 
-        props.setservicesstate("popstateend")
+        
+
+        setTimeout(()=>{
+            props.setservicesstate("popstateend")
+    
+          }, 10) 
     }
 
     else{

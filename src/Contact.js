@@ -13,7 +13,12 @@ function Contact(props) {
 
         if(props.contactstate==="popstatestart"){
 
-            props.setcontactstate("popstateend")
+            setTimeout(()=>{
+                props.setcontactstate("popstateend")
+        
+              }, 10) 
+
+            
         }
 
         else{

@@ -14,7 +14,10 @@ function About(props) {
 
         if(props.aboutstate==="popstatestart"){
 
-            props.setaboutstate("popstateend")
+      setTimeout(()=>{
+        props.setaboutstate("popstateend")
+
+      }, 10)     
         }
 
         else{
@@ -40,6 +43,7 @@ function About(props) {
 
        return ()=>{
         clearTimeout(timer)
+        
        }
     }
     })

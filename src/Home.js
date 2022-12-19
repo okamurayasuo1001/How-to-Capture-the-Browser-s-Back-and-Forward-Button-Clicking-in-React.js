@@ -12,7 +12,12 @@ function Home(props) {
 
         if(props.homestate==="popstatestart"){
 
-            props.sethomestate("popstateend")
+            
+
+            setTimeout(()=>{
+                props.sethomestate("popstateend")
+        
+              }, 10) 
         }
 
         else{

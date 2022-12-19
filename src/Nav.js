@@ -3,7 +3,7 @@
 
 import './App.css';
 
-var x = 0;
+var x = 1;
 function Nav(props) {
 
 

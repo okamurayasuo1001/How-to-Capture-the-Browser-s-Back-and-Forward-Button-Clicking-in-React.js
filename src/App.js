@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import {Routes, Route, Link, NavLink} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import Nav from './Nav';
 import Home from './Home';
@@ -144,7 +143,7 @@ useEffect(()=>{
 
   window.pstate = localStorage.getItem("previousstate")
 
-  console.log(window.pstate)
+  window.history.pushState(0, null, null)
 }, [])
 
   return (
