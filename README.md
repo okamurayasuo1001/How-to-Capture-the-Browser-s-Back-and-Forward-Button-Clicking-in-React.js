@@ -1,1 +1,1 @@
-Please let me know if you find any bug in the app. thanks
+In this project I am running an animation on Browser's forward button. When user click on back button the component enters from the right but when user click on forward button the component enters from the left. The different animation on browser's back and forward button. Please report me if you find any bugs in my project. Thanks
