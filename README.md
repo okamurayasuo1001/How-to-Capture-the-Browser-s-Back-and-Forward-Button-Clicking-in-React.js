@@ -1,1 +1,5 @@
-In this project I am capturing the browser's back and forward button click in React.js. I am running different animation when the user click on Back button and a different animation when the user click on browser's forward button. This is although a not perfect solution and having few problems but it is a good way to start. Please post me any problem that you find in the website or feel free to contact me @ khuramhaf@gmail.com if you need any support
+In this project, I capture the browser's back and forward button clicks in React.js. I run a different animation when the user clicks the back button and a different animation when they click the forward button in the browser. Although this solution is not perfect and has a few problems, it provides a good starting point.
+
+You can see a code explanation by visiting the following link
+
+https://youtu.be/289lZMsZn-0
